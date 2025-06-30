@@ -11,6 +11,7 @@ import 'package:active_ecommerce_flutter/l10n/app_localizations.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:active_ecommerce_flutter/app_config.dart';
 
 import '../../custom/cart_seller_item_list_widget.dart';
 import '../../presenter/cart_provider.dart';
@@ -350,46 +351,54 @@ class _CartState extends State<Cart> {
   }
 
   void _shareCartOnWhatsApp(CartProvider cartProvider) async {
-    String message = '';
+    String message = 'طلب جديد من تطبيق برهه 🛍️\n\n';
     double totalPrice = 0.0;
 
-    // تجميع بيانات المنتجات
     for (var shop in cartProvider.shopList) {
+      message += "المتجر: ${shop.name}\n";
+      message += "-------------------\n";
+      
       for (var item in shop.cartItems) {
-        // تحويل السعر إلى double إذا كان String
         double itemPrice = double.tryParse(
-                item.price.replaceAll(RegExp(r'[^\d.]'), '').toString()) ??
+                item.price.replaceAll(RegExp(r'[^\d.]'), '')) ??
             0.0;
-        double price = itemPrice / (item.quantity ?? 1);
         
-        // إضافة المعلومات باللغة العربية مع رابط المنتج باستخدام product_id
-        message += "اسم المنتج: ${item.productName}\n";
-        message += "السعر: ${price.toStringAsFixed(2)} ريال\n";
-        message += "الكمية: ${item.quantity}\n";
-        message += "رابط المنتج: https://borhah.com/product/${item.productId}\n";
-        // إضافة رابط صورة المنتج
-       /*  if (item.productThumbnailImage != null && item.productThumbnailImage!.isNotEmpty) {
-          message += "صورة المنتج: ${item.productThumbnailImage}\n";
-        } */
-        message += "--------------------------\n";
-        totalPrice += itemPrice;
+        message += "🏷️ المنتج: ${item.productName}\n";
+        message += "💰 السعر: ${itemPrice.toStringAsFixed(2)} ريال\n";
+        message += "📦 الكمية: ${item.quantity}\n";
+        
+        // إضافة رابط المنتج
+        message += "🔗 رابط المنتج: ${AppConfig.RAW_BASE_URL}/product/${item.productId}\n";
+        
+        // إضافة رابط الصورة
+        if (item.productThumbnailImage != null && item.productThumbnailImage!.isNotEmpty) {
+          message += "🖼️ صورة المنتج: ${item.productThumbnailImage}\n";
+        }
+
+        if (item.variation != null && item.variation!.isNotEmpty) {
+          message += "🎨 المواصفات: ${item.variation}\n";
+        }
+        
+        message += "-------------------\n";
+        totalPrice += itemPrice * (item.quantity ?? 1);
       }
     }
 
-    // إضافة السعر الكلي في نهاية الرسالة
-    message += "السعر الإجمالي: $totalPrice ريال\n";
+    message += "\n💵 السعر الإجمالي: ${totalPrice.toStringAsFixed(2)} ريال\n";
+    message += "\nشكراً لاختياركم برهه 🌟";
 
-    // استبدال رقم واتساب الفعلي هنا
     final String whatsappNumber = "+967778821618";
-
-    // إنشاء رابط الواتساب
     final String whatsappUrl = "https://wa.me/$whatsappNumber?text=${Uri.encodeComponent(message)}";
 
-    // التحقق من إمكانية فتح الرابط
     if (await canLaunch(whatsappUrl)) {
       await launch(whatsappUrl);
     } else {
-      print("لا يمكن فتح تطبيق واتساب");
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text("لا يمكن فتح تطبيق واتساب"),
+          backgroundColor: Colors.red,
+        ),
+      );
     }
   }
 
