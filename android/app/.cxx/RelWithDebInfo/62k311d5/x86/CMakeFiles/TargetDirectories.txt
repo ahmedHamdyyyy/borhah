@@ -1,0 +1,2 @@
+/Volumes/DATA/Projects/Mobile/borhah/android/app/.cxx/RelWithDebInfo/62k311d5/x86/CMakeFiles/edit_cache.dir
+/Volumes/DATA/Projects/Mobile/borhah/android/app/.cxx/RelWithDebInfo/62k311d5/x86/CMakeFiles/rebuild_cache.dir

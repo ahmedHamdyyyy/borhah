@@ -1,0 +1,190 @@
+{
+  "project_info": {
+    "project_number": "777812492300",
+    "project_id": "courses-platform-bb83f",
+    "storage_bucket": "courses-platform-bb83f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777812492300:android:e779c74ae2512959a36e29",
+        "android_client_info": {
+          "package_name": "com.eclassify.wrteam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "777812492300-m8el9hma8hp1narbdpn3do3moj27dgpt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5zgpME9k5k9dUgaEZhlxF5DUQ9RzLYM8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "777812492300-m8el9hma8hp1narbdpn3do3moj27dgpt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "777812492300-ae57ld96uuvsj2sriok34ihj0mmomllm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.emad.beltaje.getxskeleton.getxSkeleton"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777812492300:android:8bc2aa6b05b47e38a36e29",
+        "android_client_info": {
+          "package_name": "com.example.elearning_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "777812492300-m8el9hma8hp1narbdpn3do3moj27dgpt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5zgpME9k5k9dUgaEZhlxF5DUQ9RzLYM8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "777812492300-m8el9hma8hp1narbdpn3do3moj27dgpt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "777812492300-ae57ld96uuvsj2sriok34ihj0mmomllm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.emad.beltaje.getxskeleton.getxSkeleton"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777812492300:android:4f6f843634c5b23da36e29",
+        "android_client_info": {
+          "package_name": "com.optima.brahhapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "777812492300-m8el9hma8hp1narbdpn3do3moj27dgpt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5zgpME9k5k9dUgaEZhlxF5DUQ9RzLYM8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "777812492300-m8el9hma8hp1narbdpn3do3moj27dgpt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "777812492300-ae57ld96uuvsj2sriok34ihj0mmomllm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.emad.beltaje.getxskeleton.getxSkeleton"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777812492300:android:f49863c84e3af23aa36e29",
+        "android_client_info": {
+          "package_name": "iampack.azzouz.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "777812492300-m8el9hma8hp1narbdpn3do3moj27dgpt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5zgpME9k5k9dUgaEZhlxF5DUQ9RzLYM8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "777812492300-m8el9hma8hp1narbdpn3do3moj27dgpt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "777812492300-ae57ld96uuvsj2sriok34ihj0mmomllm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.emad.beltaje.getxskeleton.getxSkeleton"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777812492300:android:983c849c747ca63ba36e29",
+        "android_client_info": {
+          "package_name": "kaleo.chat.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "777812492300-m8el9hma8hp1narbdpn3do3moj27dgpt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5zgpME9k5k9dUgaEZhlxF5DUQ9RzLYM8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "777812492300-m8el9hma8hp1narbdpn3do3moj27dgpt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "777812492300-ae57ld96uuvsj2sriok34ihj0mmomllm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.emad.beltaje.getxskeleton.getxSkeleton"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
